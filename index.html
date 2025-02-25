@@ -5,49 +5,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title> Portifolio | Cassiano </title>
+    <title>Portfólio | Cassiano</title>
 </head>
 
 <body>
     <header>
         <ul>
             <li>
-                <a>Home</a>
+                <a href="#">Inicio</a>
             </li>
             <li>
-                <a>Projetos</a>
+                <a href="#projetos">Projetos</a>
             </li>
             <li>
-                <a>Sobre</a>
+                <a href="#tecnologias">Tecnologias</a>
             </li>
             <li>
-                <a>Contato</a>
+                <a href="#sobre">Sobre</a>
+            </li>
+            <li>
+                <a href="#contato">Contato</a>
             </li>
         </ul>
     </header>
 
     <section class="principal">
-        <div>
-            <h1>Olá, eu sou <span>Cassiano Luademiro</span>.</h1>
-            <p>Seja bem-vindo ao meu portfólio! Me chamo Cassiano Laudemiro Expedito e sou um desenvolvedor em transição de carreira para a área de tecnologia. Com uma trajetória marcada por dedicação e aprendizado contínuo, estou sempre buscando novas oportunidades para evoluir e aprimorar minhas habilidades.
+        <div class="conteudo-principal">
+            <div class="texto-principal">
+                <h1>Olá, eu sou <span>Cassiano Luademiro</span>.</h1>
+                <p>Bem-vindo ao meu portfólio!
 
-                O que eu faço?
-                Atualmente, me especializo no desenvolvimento Full Stack, com foco em HTML, CSS, JavaScript, React, Node.js, Docker, e bancos de dados (SQL e MongoDB). Também tenho experiência com Power BI e análise de dados.
-                
-                Projetos e Aprendizado
-                Aqui no meu portfólio, você encontrará alguns dos projetos que desenvolvi, onde aplico na prática os conceitos que estudo. Cada projeto representa um desafio superado e um passo a mais na minha jornada como desenvolvedor.
-                
-                Objetivo Profissional
-                Meu objetivo é atuar na área de tecnologia, contribuindo para soluções inovadoras e criando aplicações funcionais e intuitivas. Gosto de desafios e acredito no poder da tecnologia para transformar ideias em realidade.
-                
-                Obrigado por visitar meu portfólio! 😊</p>
-            <a class="botao">Ver Projetos</a>
+                    Aqui, você encontrará um pouco do meu mundo: minhas habilidades, experiências e projetos que refletem minha paixão e dedicação. Cada trabalho é um pedaço da minha jornada, moldado com criatividade, estratégia e atenção aos detalhes.
+                    
+                    Sinta-se à vontade para explorar e conhecer mais sobre o que faço. Se tiver alguma dúvida ou quiser colaborar, entre em contato—será um prazer conversar!
+                    Obrigado por visitar meu portfólio! 😊</p>
+                <a href="#projetos" class="botao">Ver Projetos</a>
+            </div>
+            <div class="foto-container">
+                <img src="./img/img portifolio/minha imagem.jpg" alt="Foto de Cassiano Luademiro" class="minha-foto">
+            </div>
         </div>
-
     </section>
 
-    <section class="secao">
-        <h2 class="tutulo-secao">Projetos</h2>
+    <section id="tecnologias" class="secao tecnologias">
+        <h2 class="titulo-secao">Tecnologias</h2>
+        <div class="container-tecnologias">
+            <div class="card-tecnologia">
+                <i class="tech-icon html-icon"></i>
+                <span>HTML</span>
+            </div>
+            <div class="card-tecnologia">
+                <i class="tech-icon css-icon"></i>
+                <span>CSS</span>
+            </div>
+            <div class="card-tecnologia">
+                <i class="tech-icon js-icon"></i>
+                <span>JavaScript</span>
+            </div>
+            <div class="card-tecnologia">
+                <i class="tech-icon react-icon"></i>
+                <span>React</span>
+            </div>
+            <div class="card-tecnologia">
+                <i class="tech-icon node-icon"></i>
+                <span>Node.js</span>
+            </div>
+            <div class="card-tecnologia">
+                <i class="tech-icon docker-icon"></i>
+                <span>Docker</span>
+            </div>
+            <div class="card-tecnologia">
+                <i class="tech-icon tailwind-icon"></i>
+                <span>Tailwind</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos" class="secao">
+        <h2 class="titulo-secao">Projetos</h2>
 
         <div class="grade-projeto">
             <div class="card-projeto">
@@ -72,10 +107,9 @@
                         Adicionar funcionalidade ao botão "Ver mais" para exibir detalhes dos carros.
                         Implementar filtros dinâmicos para refinar a busca.
                         Conectar a aplicação a um banco de dados para carregar veículos dinamicamente.
-                        Esse projeto tem sido um grande aprendizado, ajudando-me a entender melhor a lógica do desenvolvimento web e a aprimorar minhas habilidades técnicas. Estou animado com os próximos desafios! </p>
+                        Esse projeto tem sido um grande aprendizado, ajudando-me a entender melhor a lógica do desenvolvimento web e a aprimorar minhas habilidades técnicas. Estou animado com os próximos desafios!</p>
                     <a href="https://cassiano022.github.io/projeto-clone-webmotor/">Ver Projeto ➡ </a>
                 </div>
-
             </div>
 
             <div class="card-projeto">
@@ -94,16 +128,15 @@
                         Interface responsiva e intuitiva.
                         Identidade visual alinhada à proposta da marca.
                         Criação de uma experiência imersiva para os visitantes do site.
-                        Esse projeto foi uma excelente oportunidade para aprofundar meus conhecimentos em desenvolvimento web e design, unindo tecnologia e paixão pelo universo dos cafés! </p>
+                        Esse projeto foi uma excelente oportunidade para aprofundar meus conhecimentos em desenvolvimento web e design, unindo tecnologia e paixão pelo universo dos cafés!</p>
                     <a href="https://cassiano022.github.io/projeto-cafeteria/">Ver Projeto ➡ </a>
                 </div>
-
             </div>
 
             <div class="card-projeto">
                 <img class="img-projeto" src="./img/img portifolio/site de refrigerante.JPG" alt="imagem-projeto">
                 <div class="info-projeto">
-                    <h3>site de refrigerante</h3>
+                    <h3>Site de Refrigerante</h3>
                     <p>Aplicação de Tela Animada 
                         Desenvolvi um carrossel de imagens interativo para praticar minhas habilidades em desenvolvimento web. A aplicação permite que o usuário navegue entre imagens de frutas (morango, abacate e laranja) usando botões de "próximo" e "anterior".
                         
@@ -120,13 +153,36 @@
                         Esse projeto me ajudou a aprofundar o entendimento sobre a integração entre HTML, CSS e JavaScript, além de reforçar conceitos essenciais de manipulação do DOM!</p>
                     <a href="https://cassiano022.github.io/Aplica--o-Animada/">Ver Projeto ➡ </a>
                 </div>
-
             </div>
-
         </div>
-
     </section>
 
+    <section id="sobre" class="secao sobre">
+        <div class="info-projeto">
+            <p>Me chamo Cassiano Laudemiro Expedito e sou um desenvolvedor em transição de carreira para a área de tecnologia. Com uma trajetória marcada por dedicação e aprendizado contínuo, estou sempre buscando novas oportunidades para evoluir e aprimorar minhas habilidades.
+
+            💻 O que eu faço?
+            Atualmente, me especializo no desenvolvimento Full Stack, com foco em HTML, CSS, JavaScript, React, Node.js e bancos de dados (SQL e MongoDB). Também tenho experiência com Power BI e análise de dados.
+            
+            🚀 Projetos e Aprendizado
+            Aqui no meu portfólio, você encontrará alguns dos projetos que desenvolvi, onde aplico na prática os conceitos que estudo. Cada projeto representa um desafio superado e um passo a mais na minha jornada como desenvolvedor.
+            
+            🔍 Objetivo Profissional
+            Meu objetivo é atuar na área de tecnologia, contribuindo para soluções inovadoras e criando aplicações funcionais e intuitivas. Gosto de desafios e acredito no poder da tecnologia para transformar ideias em realidade.
+        </p></div>
+    </section>
+
+    <section id="contato" class="secao contato">
+        <div class="info-projeto">
+            <P> 📲 (11) 93070-2976 📧
+               cassianolaudemiro1@gmail.com
+            </p>
+            </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Cassiano Luademiro. Todos os direitos reservados.</p>
+    </footer>
 </body>
 
 </html>
