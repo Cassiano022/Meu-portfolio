@@ -4,42 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Cassiano Luademiro - Desenvolvedor Full Stack">
     <link rel="stylesheet" href="styles.css">
-    <title>Portfólio | Cassiano</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Portfólio | Cassiano Luademiro</title>
 </head>
 
 <body>
     <header>
-        <ul>
-            <li>
-                <a href="#">Inicio</a>
-            </li>
-            <li>
-                <a href="#projetos">Projetos</a>
-            </li>
-            <li>
-                <a href="#tecnologias">Tecnologias</a>
-            </li>
-            <li>
-                <a href="#sobre">Sobre</a>
-            </li>
-            <li>
-                <a href="#contato">Contato</a>
-            </li>
-        </ul>
+        <div class="logo">CL</div>
+        <nav>
+            <ul class="menu">
+                <li><a href="#" class="menu-link">Início</a></li>
+                <li><a href="#projetos" class="menu-link">Projetos</a></li>
+                <li><a href="#tecnologias" class="menu-link">Tecnologias</a></li>
+                <li><a href="#sobre" class="menu-link">Sobre</a></li>
+                <li><a href="#contato" class="menu-link">Contato</a></li>
+            </ul>
+            <div class="menu-mobile">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
     </header>
 
     <section class="principal">
         <div class="conteudo-principal">
             <div class="texto-principal">
-                <h1>Olá, eu sou <span>Cassiano Luademiro</span>.</h1>
-                <p>Bem-vindo ao meu portfólio!
-
-                    Aqui, você encontrará um pouco do meu mundo: minhas habilidades, experiências e projetos que refletem minha paixão e dedicação. Cada trabalho é um pedaço da minha jornada, moldado com criatividade, estratégia e atenção aos detalhes.
-                    
-                    Sinta-se à vontade para explorar e conhecer mais sobre o que faço. Se tiver alguma dúvida ou quiser colaborar, entre em contato—será um prazer conversar!
-                    Obrigado por visitar meu portfólio! 😊</p>
-                <a href="#projetos" class="botao">Ver Projetos</a>
+                <h1>Olá, eu sou <span>Cassiano L. Expedito</span>.</h1>
+                <h2 class="subtitulo">Desenvolvedor Front End</h2>
+                <p>Bem-vindo ao meu portfólio! Aqui, você encontrará um pouco do meu mundo: minhas habilidades, experiências e projetos que refletem minha paixão e dedicação. Cada trabalho é um pedaço da minha jornada, moldado com criatividade, estratégia e atenção aos detalhes.</p>
+                <div class="botoes-acao">
+                    <a href="#projetos" class="botao primario">Ver Projetos</a>
+                    <a href="#contato" class="botao secundario">Contato</a>
+                </div>
+                <div class="redes-sociais">
+                    <a href="https://github.com/cassiano022" target="_blank" class="rede-link"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/seu-perfil" target="_blank" class="rede-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:cassianolaudemiro1@gmail.com" class="rede-link"><i class="fas fa-envelope"></i></a>
+                </div>
             </div>
             <div class="foto-container">
                 <img src="./img/img portifolio/minha imagem.jpg" alt="Foto de Cassiano Luademiro" class="minha-foto">
@@ -51,138 +53,203 @@
         <h2 class="titulo-secao">Tecnologias</h2>
         <div class="container-tecnologias">
             <div class="card-tecnologia">
-                <i class="tech-icon html-icon"></i>
+                <i class="fab fa-html5"></i>
                 <span>HTML</span>
             </div>
             <div class="card-tecnologia">
-                <i class="tech-icon css-icon"></i>
+                <i class="fab fa-css3-alt"></i>
                 <span>CSS</span>
             </div>
             <div class="card-tecnologia">
-                <i class="tech-icon js-icon"></i>
+                <i class="fab fa-js"></i>
                 <span>JavaScript</span>
             </div>
             <div class="card-tecnologia">
-                <i class="tech-icon react-icon"></i>
+                <i class="fab fa-react"></i>
                 <span>React</span>
             </div>
             <div class="card-tecnologia">
-                <i class="tech-icon node-icon"></i>
+                <i class="fab fa-node-js"></i>
                 <span>Node.js</span>
             </div>
             <div class="card-tecnologia">
-                <i class="tech-icon docker-icon"></i>
+                <i class="fab fa-docker"></i>
                 <span>Docker</span>
             </div>
             <div class="card-tecnologia">
-                <i class="tech-icon tailwind-icon"></i>
+                <i class="fab fa-bootstrap"></i>
                 <span>Tailwind</span>
             </div>
         </div>
     </section>
 
-    <section id="projetos" class="secao">
+    <section id="projetos" class="secao projetos">
         <h2 class="titulo-secao">Projetos</h2>
 
         <div class="grade-projeto">
             <div class="card-projeto">
-                <img class="img-projeto" src="./img/img portifolio/webmotor.JPG" alt="imagem-projeto">
+                <div class="img-container">
+                    <img class="img-projeto" src="./img/img portifolio/webmotor.JPG" alt="WebMotors Clone">
+                    <div class="overlay">
+                        <div class="tecnologias-projeto">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
                 <div class="info-projeto">
-                    <h3>WebMotors</h3>
-                    <p>Clone do Webmotors 
-                        Desenvolvi um clone do Webmotors, focado na experiência do usuário e na estruturação de uma plataforma intuitiva para pesquisa de veículos. Esse projeto tem sido essencial para aprimorar minhas habilidades em desenvolvimento web.
-                        
-                        Tecnologias utilizadas:
-                        HTML/CSS – Estruturação e estilização responsiva.
-                        JavaScript – Interatividade e manipulação dinâmica dos elementos da página.
-                        
-                        Funcionalidades implementadas:
-                        
-                        Banner interativo para destacar ofertas.
-                        Seção de busca intuitiva para facilitar a navegação.
-                        Listagem de carros em destaque com informações relevantes.
-                        Exibição de marcas oficiais para uma experiência mais realista.
-                        Próximos passos:
-                        
-                        Adicionar funcionalidade ao botão "Ver mais" para exibir detalhes dos carros.
-                        Implementar filtros dinâmicos para refinar a busca.
-                        Conectar a aplicação a um banco de dados para carregar veículos dinamicamente.
-                        Esse projeto tem sido um grande aprendizado, ajudando-me a entender melhor a lógica do desenvolvimento web e a aprimorar minhas habilidades técnicas. Estou animado com os próximos desafios!</p>
-                    <a href="https://cassiano022.github.io/projeto-clone-webmotor/">Ver Projeto ➡ </a>
+                    <h3>WebMotors Clone</h3>
+                    <p>Clone do WebMotors com foco na experiência do usuário e na estruturação de uma plataforma intuitiva para pesquisa de veículos. Implementei um banner interativo, seção de busca intuitiva, listagem de carros em destaque e exibição de marcas oficiais.</p>
+                    <div class="links-projeto">
+                        <a href="https://cassiano022.github.io/projeto-clone-webmotor/" target="_blank" class="link-projeto"><i class="fas fa-external-link-alt"></i> Ver Demo</a>
+                        <a href="https://github.com/cassiano022/projeto-clone-webmotor" target="_blank" class="link-projeto"><i class="fab fa-github"></i> Ver Código</a>
+                    </div>
                 </div>
             </div>
 
             <div class="card-projeto">
-                <img class="img-projeto" src="./img/img portifolio/cafeteria.JPG" alt="imagem-projeto">
+                <div class="img-container">
+                    <img class="img-projeto" src="./img/img portifolio/cafeteria.JPG" alt="The Coffee Nook">
+                    <div class="overlay">
+                        <div class="tecnologias-projeto">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                        </div>
+                    </div>
+                </div>
                 <div class="info-projeto">
                     <h3>The Coffee Nook</h3>
-                    <p>The Coffee Nook ☕
-                        Desenvolvi o site da The Coffee Nook, uma cafeteria em criação, com o objetivo de oferecer uma experiência online aconchegante e intuitiva para os futuros clientes.
-                        
-                        Tecnologias utilizadas:
-                        HTML/CSS – Estruturação responsiva e estilização para garantir uma navegação fluida e agradável.
-                        Design e Estilo – Escolha cuidadosa de fontes e elementos visuais para transmitir a essência acolhedora da cafeteria.
-                        
-                        Destaques do projeto:
-                        
-                        Interface responsiva e intuitiva.
-                        Identidade visual alinhada à proposta da marca.
-                        Criação de uma experiência imersiva para os visitantes do site.
-                        Esse projeto foi uma excelente oportunidade para aprofundar meus conhecimentos em desenvolvimento web e design, unindo tecnologia e paixão pelo universo dos cafés!</p>
-                    <a href="https://cassiano022.github.io/projeto-cafeteria/">Ver Projeto ➡ </a>
+                    <p>Site para uma cafeteria, desenvolvido com o objetivo de oferecer uma experiência online aconchegante e intuitiva. Criei uma interface responsiva com identidade visual alinhada à proposta da marca, proporcionando uma experiência imersiva para os visitantes.</p>
+                    <div class="links-projeto">
+                        <a href="https://cassiano022.github.io/projeto-cafeteria/" target="_blank" class="link-projeto"><i class="fas fa-external-link-alt"></i> Ver Demo</a>
+                        <a href="https://github.com/cassiano022/projeto-cafeteria" target="_blank" class="link-projeto"><i class="fab fa-github"></i> Ver Código</a>
+                    </div>
                 </div>
             </div>
 
             <div class="card-projeto">
-                <img class="img-projeto" src="./img/img portifolio/site de refrigerante.JPG" alt="imagem-projeto">
+                <div class="img-container">
+                    <img class="img-projeto" src="./img/img portifolio/site de refrigerante.JPG" alt="Aplicação Animada">
+                    <div class="overlay">
+                        <div class="tecnologias-projeto">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
                 <div class="info-projeto">
-                    <h3>Site de Refrigerante</h3>
-                    <p>Aplicação de Tela Animada 
-                        Desenvolvi um carrossel de imagens interativo para praticar minhas habilidades em desenvolvimento web. A aplicação permite que o usuário navegue entre imagens de frutas (morango, abacate e laranja) usando botões de "próximo" e "anterior".
-                        
-                        Tecnologias utilizadas:
-                        HTML – Estrutura da página.
-                        CSS – Estilização e ajuste de cores de fundo.
-                        JavaScript – Manipulação dinâmica do DOM para troca de imagens.
-                        
-                        Destaques do projeto:
-                        
-                        Navegação intuitiva entre imagens.
-                        Lógica que reinicia o carrossel ao chegar ao final.
-                        Aplicação e remoção dinâmica de classes CSS para realçar o item ativo.
-                        Esse projeto me ajudou a aprofundar o entendimento sobre a integração entre HTML, CSS e JavaScript, além de reforçar conceitos essenciais de manipulação do DOM!</p>
-                    <a href="https://cassiano022.github.io/Aplica--o-Animada/">Ver Projeto ➡ </a>
+                    <h3>Carrossel Interativo</h3>
+                    <p>Carrossel de imagens interativo desenvolvido para praticar manipulação do DOM. A aplicação permite navegar entre imagens usando botões de "próximo" e "anterior", com lógica para reiniciar o carrossel ao chegar ao final e destaque visual para o item ativo.</p>
+                    <div class="links-projeto">
+                        <a href="https://cassiano022.github.io/Aplica--o-Animada/" target="_blank" class="link-projeto"><i class="fas fa-external-link-alt"></i> Ver Demo</a>
+                        <a href="https://github.com/cassiano022/Aplica--o-Animada" target="_blank" class="link-projeto"><i class="fab fa-github"></i> Ver Código</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <section id="sobre" class="secao sobre">
-        <div class="info-projeto">
-            <p>Me chamo Cassiano Laudemiro Expedito e sou um desenvolvedor em transição de carreira para a área de tecnologia. Com uma trajetória marcada por dedicação e aprendizado contínuo, estou sempre buscando novas oportunidades para evoluir e aprimorar minhas habilidades.
-
-            💻 O que eu faço?
-            Atualmente, me especializo no desenvolvimento Full Stack, com foco em HTML, CSS, JavaScript, React, Node.js e bancos de dados (SQL e MongoDB). Também tenho experiência com Power BI e análise de dados.
-            
-            🚀 Projetos e Aprendizado
-            Aqui no meu portfólio, você encontrará alguns dos projetos que desenvolvi, onde aplico na prática os conceitos que estudo. Cada projeto representa um desafio superado e um passo a mais na minha jornada como desenvolvedor.
-            
-            🔍 Objetivo Profissional
-            Meu objetivo é atuar na área de tecnologia, contribuindo para soluções inovadoras e criando aplicações funcionais e intuitivas. Gosto de desafios e acredito no poder da tecnologia para transformar ideias em realidade.
-        </p></div>
+        <h2 class="titulo-secao">Sobre Mim</h2>
+        <div class="conteudo-sobre">
+            <div class="foto-sobre">
+                <img src="./img/img portifolio/minha imagem.jpg" alt="Cassiano Luademiro" class="foto-perfil">
+            </div>
+            <div class="texto-sobre">
+                <h3>Cassiano Luademiro Expedito</h3>
+                <h4>Desenvolvedor Front End</h4>
+                <p>Sou um desenvolvedor em transição de carreira para a área de tecnologia. Com uma trajetória marcada por dedicação e aprendizado contínuo, estou sempre buscando novas oportunidades para evoluir e aprimorar minhas habilidades.</p>
+                
+                <h4>O que eu faço?</h4>
+                <p>Atualmente, me especializo no desenvolvimento Full Stack, com foco em HTML, CSS, JavaScript, React, Node.js e bancos de dados (SQL e MongoDB). Também tenho experiência com Power BI e análise de dados.</p>
+                
+                <h4>Objetivo Profissional</h4>
+                <p>Meu objetivo é atuar na área de tecnologia, contribuindo para soluções inovadoras e criando aplicações funcionais e intuitivas. Gosto de desafios e acredito no poder da tecnologia para transformar ideias em realidade.</p>
+                
+                <a href="./img/img portifolio/Imagem do WhatsApp de 2025-02-26 à(s) 22.11.26_d5d8799a.jpg" class="botao primario">Download CV</a>
+            </div>
+        </div>
     </section>
 
     <section id="contato" class="secao contato">
-        <div class="info-projeto">
-            <P> 📲 (11) 93070-2976 📧
-               cassianolaudemiro1@gmail.com
-            </p>
+        <h2 class="titulo-secao">Entre em Contato</h2>
+        <div class="container-contato">
+            <div class="info-contato">
+                <div class="item-contato">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h4>Telefone</h4>
+                        <p>(11) 93070-2976</p>
+                    </div>
+                </div>
+                <div class="item-contato">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>Email</h4>
+                        <p>cassianolaudemiro1@gmail.com</p>
+                    </div>
+                </div>
+                <div class="item-contato">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h4>Localização</h4>
+                        <p>São Paulo, SP - Brasil</p>
+                    </div>
+                </div>
             </div>
+            <form class="formulario-contato">
+                <div class="campo-form">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="campo-form">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="campo-form">
+                    <label for="assunto">Assunto</label>
+                    <input type="text" id="assunto" name="assunto" required>
+                </div>
+                <div class="campo-form">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="botao primario">Enviar Mensagem</button>
+            </form>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2025 Cassiano Luademiro. Todos os direitos reservados.</p>
+        <div class="container-footer">
+            <div class="logo-footer">
+                
+                <p>Desenvolvedor Front End</p>
+            </div>
+            <div class="links-footer">
+                <h4>Links Rápidos</h4>
+                <a href="#">Início</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#tecnologias">Tecnologias</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#contato">Contato</a>
+            </div>
+            <div class="social-footer">
+                <h4>Redes Sociais</h4>
+                <div class="redes-icons">
+                    <a href="https://github.com/cassiano022" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/seu-perfil" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Cassiano Luademiro. Todos os direitos reservados.</p>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
