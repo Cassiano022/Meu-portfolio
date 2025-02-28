@@ -1,10 +1,38 @@
+// Função para animar as barras de progresso quando estiverem visíveis
+function animateSkillBars() {
+    const skillFills = document.querySelectorAll('.skill-fill');
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const skillFill = entry.target;
+                const percent = skillFill.getAttribute('data-percent');
+                skillFill.style.width = percent + '%';
+                skillFill.parentElement.parentElement.classList.add('fade-in-up');
+                // Desconecta o observer após animar
+                observer.unobserve(skillFill);
+            }
+        });
+    }, { threshold: 0.1 });
+
+    // Observar cada barra de habilidade
+    skillFills.forEach(skillFill => {
+        observer.observe(skillFill);
+    });
+}
+
+// Inicializar a animação das barras quando o DOM estiver carregado
 document.addEventListener('DOMContentLoaded', function() {
+    animateSkillBars();
+    
+    // Código existente para o menu mobile (mantenha-o)
     const menuMobile = document.querySelector('.menu-mobile');
     const menu = document.querySelector('.menu');
     
-    menuMobile.addEventListener('click', function() {
-        menu.classList.toggle('active');
-    });
+    if (menuMobile) {
+        menuMobile.addEventListener('click', function() {
+            menu.classList.toggle('active');
+        });
+    }
     
     // Fechar o menu ao clicar em um link
     const menuLinks = document.querySelectorAll('.menu-link');
