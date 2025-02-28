@@ -11,11 +11,12 @@ html {
 }
 
 body {
-    background: #0a0a0a;
-    color: #fff;
+    background: linear-gradient(to right, #0270AC, #6FF9B9);
+    color: #0a19ee;
     line-height: 1.6;
+    height: 100vh; 
+    margin: 0;
 }
-
 a {
     text-decoration: none;
     color: inherit;
@@ -129,7 +130,7 @@ nav {
 }
 
 .texto-principal h1 span {
-    color: #30c9f8;
+    color: #120eee;
     position: relative;
 }
 
@@ -662,7 +663,7 @@ footer {
     .conteudo-principal {
         flex-direction: column-reverse;
         text-align: center;
-        gap: 50px;
+        gap: 40px;
     }
     
     .texto-principal h1 span::after {
@@ -670,30 +671,33 @@ footer {
         transform: translateX(-50%);
     }
     
-    .botoes {
+    .foto-container {
+        width: 100%;
+        display: flex;
         justify-content: center;
     }
     
     .conteudo-sobre {
         flex-direction: column;
         text-align: center;
+        gap: 40px;
     }
     
-    .texto-sobre h4 {
+    .foto-sobre {
+        width: 100%;
+        display: flex;
         justify-content: center;
+    }
+    
+    .titulo-secao {
+        text-align: center;
+        display: block;
+        width: 100%;
     }
     
     .titulo-secao::after {
         left: 50%;
         transform: translateX(-50%);
-    }
-    
-    .botoes-sobre {
-        justify-content: center;
-    }
-    
-    .container-contato {
-        flex-direction: column;
     }
 }
 
@@ -714,14 +718,22 @@ footer {
         padding: 80px 20px;
     }
     
-    .titulo-secao {
-        font-size: 28px;
-        text-align: center;
-        display: block;
+    .principal {
+        padding-top: 100px;
     }
     
-    .grade-projeto {
-        grid-template-columns: 1fr;
+    .card-tecnologia {
+        min-width: 80px;
+        height: 80px;
+        padding: 10px;
+    }
+    
+    .card-tecnologia i {
+        font-size: 24px;
+    }
+    
+    .card-tecnologia span {
+        font-size: 12px;
     }
     
     .info-contato {
@@ -732,6 +744,41 @@ footer {
     .item-contato {
         flex-direction: column;
         align-items: center;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .texto-principal h1 {
+        font-size: 32px;
+    }
+    
+    .subtitulo {
+        font-size: 18px;
+    }
+    
+    .botoes-acao {
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+    }
+    
+    .botao {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .minha-foto {
+        max-width: 250px;
+    }
+    
+    .card-tecnologia {
+        min-width: 70px;
+        height: 70px;
+    }
+    
+    .formulario-contato {
+        padding: 20px 15px;
     }
 }
 
@@ -751,44 +798,17 @@ footer {
 }
 
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.texto-principal h1,
-.texto-principal .subtitulo,
-.texto-principal p,
-.botoes {
-    animation: fadeIn 0.8s ease forwards;
-}
-
-.texto-principal .subtitulo {
-    animation-delay: 0.2s;
-}
-
-.texto-principal p {
-    animation-delay: 0.4s;
-}
-
-.botoes {
-    animation-delay: 0.6s;
+.texto-sobre p {
+    color: #bbb; 
 }
 
 
-.minha-foto,
-.foto-sobre,
-.img-projeto {
-    transition: opacity 0.5s ease, filter 0.5s ease;
+.item-contato p {
+    color: #bbb; 
 }
 
-.loading {
-    opacity: 0.6;
-    filter: blur(5px);
+
+p {
+    color: #bbb;
+    line-height: 1.6;
 }
