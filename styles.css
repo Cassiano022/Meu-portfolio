@@ -130,7 +130,7 @@ nav {
 }
 
 .texto-principal h1 span {
-    color: #ebebf0;
+    color: #30c9f8;
     position: relative;
 }
 
@@ -146,13 +146,13 @@ nav {
 
 .subtitulo {
     font-size: 24px;
-    color: #bbb;
+    color: #fff;
     margin-bottom: 20px;
 }
 
 .texto-principal p {
     margin-bottom: 30px;
-    color: #bbb;
+    color: #fff;
     font-size: 16px;
     max-width: 600px;
 }
@@ -929,16 +929,16 @@ footer {
 
 
 .texto-sobre p {
-    color: #bbb; 
+    color: #0c0c0c; 
 }
 
 
 .item-contato p {
-    color: #bbb; 
+    color: #0c0c0c; 
 }
 
 
 p {
-    color: #bbb;
+    color: #0c0c0c;
     line-height: 1.6;
 }
