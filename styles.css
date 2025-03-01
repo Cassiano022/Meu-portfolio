@@ -15,7 +15,7 @@ body {
     background-size: cover; /* Garante que o fundo cubra toda a tela */
     background-repeat: no-repeat; /* Impede repetição do fundo */
     background-attachment: fixed; /* Mantém o fundo fixo ao rolar */
-    color: #30c9f8;
+    color: hsl(184, 89%, 55%);
     line-height: 1.6;
     height: 100vh; /* Garante que ocupa toda a altura da tela */
     overflow-x: hidden; /* Evita rolagem horizontal */
@@ -54,8 +54,8 @@ header.scrolled {
 .logo {
     font-size: 28px;
     font-weight: bold;
-    color: #30c9f8;
-    border: 2px solid #30c9f8;
+    color: hsl(184, 89%, 55%);
+    border: 2px solid hsl(184, 89%, 55%);
     width: 50px;
     height: 50px;
     display: flex;
@@ -83,7 +83,7 @@ nav {
 }
 
 .menu li a:hover {
-    color: #30c9f8;
+    color: hsl(184, 89%, 55%);
 }
 
 .menu li a::after {
@@ -93,7 +93,7 @@ nav {
     left: 0;
     width: 0;
     height: 2px;
-    background-color: #30c9f8;
+    background-color: hsl(184, 89%, 55%);
     transition: width 0.3s ease;
 }
 
@@ -105,7 +105,7 @@ nav {
     display: none;
     font-size: 24px;
     cursor: pointer;
-    color: #30c9f8;
+    color: hsl(184, 89%, 55%);
 }
 
 
@@ -136,7 +136,7 @@ nav {
 }
 
 .texto-principal h1 span {
-    color: #30c9f8;
+    color: hsl(184, 89%, 55%);
     position: relative;
 }
 
@@ -145,7 +145,7 @@ nav {
     position: absolute;
     width: 100%;
     height: 4px;
-    background-color: #30c9f8;
+    background-color: hsl(184, 89%, 55%);
     bottom: -5px;
     left: 0;
 }
@@ -178,20 +178,20 @@ nav {
 }
 
 .primario {
-    background-color: #30c9f8;
+    background-color: hsl(184, 89%, 55%);
     color: #fff;
 }
 
 .primario:hover {
-    background-color: #28b5e0;
+    background-color: hsl(184, 89%, 55%);
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(48, 201, 248, 0.3);
 }
 
 .secundario {
     background-color: transparent;
-    color: #30c9f8;
-    border: 2px solid #30c9f8;
+    color: hsl(184, 89%, 55%);
+    border: 2px solid hsl(184, 89%, 55%);
 }
 
 .secundario:hover {
@@ -211,7 +211,7 @@ nav {
     height: 350px;
     object-fit: cover;
     border-radius: 50%;
-    border: 4px solid #30c9f8;
+    border: 4px solid hsl(184, 89%, 55%);
     box-shadow: 0 0 20px rgba(48, 201, 248, 0.5);
     position: relative;
     z-index: 1;
@@ -223,7 +223,7 @@ nav {
     width: 320px;
     height: 320px;
     border-radius: 50%;
-    border: 1px dashed #30c9f8;
+    border: 1px dashed hsl(184, 89%, 55%);
     animation: rotate 10s linear infinite;
 }
 
@@ -255,7 +255,7 @@ nav {
     bottom: -15px;
     width: 100px;
     height: 4px;
-    background-color: #30c9f8;
+    background-color: hsl(184, 89%, 55%);
 }
 
 
@@ -299,18 +299,18 @@ nav {
 .card-tecnologia:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 20px rgba(48, 201, 248, 0.2);
-    border-color: #30c9f8;
+    border-color: hsl(184, 89%, 55%);
 }
 
 .tech-icon {
     font-size: 40px;
     margin-bottom: 10px;
-    color: #30c9f8;
+    color: hsl(184, 89%, 55%);
 }
 
 .card-tecnologia span {
     font-weight: 500;
-    color: #30c9f8;
+    color: hsl(184, 89%, 55%);
 }
 
 .skill-container {
@@ -333,7 +333,7 @@ nav {
 /* Barra de progresso preenchida */
 .skill-fill {
     height: 100%;
-    background-color: #30c9f8;
+    background-color: hsl(184, 89%, 55%);
     border-radius: 10px;
     position: relative;
     width: 0; /* Será controlado via JavaScript */
@@ -365,7 +365,7 @@ nav {
 /* Texto de porcentagem */
 .skill-percent {
     font-size: 12px;
-    color: #30c9f8;
+    color: hsl(184, 89%, 55%);
     position: absolute;
     right: 0;
     top: -18px;
@@ -383,7 +383,7 @@ nav {
 .card-tecnologia i {
     font-size: 32px;
     margin-bottom: 10px;
-    color: #30c9f8;
+    color: hsl(184, 89%, 55%);
 }
 
 /* Ajustes responsivos para os cards */
@@ -465,7 +465,7 @@ nav {
 .card-projeto:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
-    border-color: #30c9f8;
+    border-color: hsl(184, 89%, 55%);
 }
 
 .img-container {
@@ -506,7 +506,7 @@ nav {
 
 .botao-overlay {
     padding: 8px 16px;
-    background-color: #30c9f8;
+    background-color: hsl(184, 89%, 55%);
     color: #fff;
     border-radius: 5px;
     font-weight: 500;
@@ -524,7 +524,7 @@ nav {
 
 .info-projeto h3 {
     margin-bottom: 10px;
-    color: #30c9f8;
+    color: hsl(184, 89%, 55%);
     font-size: 20px;
 }
 
@@ -538,7 +538,7 @@ nav {
 .tag {
     padding: 4px 10px;
     background-color: rgba(48, 201, 248, 0.1);
-    color: #30c9f8;
+    color: hsl(184, 89%, 55%);
     border-radius: 20px;
     font-size: 12px;
     font-weight: 600;
@@ -552,7 +552,7 @@ nav {
 }
 
 .link-projeto {
-    color: #30c9f8;
+    color: hsl(184, 89%, 55%);
     font-weight: 500;
     display: flex;
     align-items: center;
@@ -588,7 +588,7 @@ nav {
     object-fit: cover; /* Garante que a imagem não distorça */
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-    border: 4px solid #30c9f8;
+    border: 4px solid hsl(184, 89%, 55%);
 }
 
 .texto-sobre {
@@ -598,7 +598,7 @@ nav {
 .texto-sobre h3 {
     font-size: 24px;
     margin-bottom: 20px;
-    color: #30c9f8;
+    color: hsl(184, 89%, 55%);
 }
 
 .texto-sobre h4 {
@@ -612,7 +612,7 @@ nav {
 }
 
 .texto-sobre h4 i {
-    color: #30c9f8;
+    color: hsl(184, 89%, 55%);
 }
 
 .texto-sobre p {
@@ -653,7 +653,7 @@ nav {
 
 .item-contato i {
     font-size: 20px;
-    color: #30c9f8;
+    color: hsl(184, 89%, 55%);
     background-color: rgba(48, 201, 248, 0.1);
     width: 40px;
     height: 40px;
@@ -686,12 +686,12 @@ nav {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    color: #30c9f8;
+    color: hsl(184, 89%, 55%);
     transition: all 0.3s ease;
 }
 
 .rede-social:hover {
-    background-color: #30c9f8;
+    background-color: hsl(184, 89%, 55%);
     color: #fff;
     transform: translateY(-5px);
 }
@@ -729,13 +729,13 @@ nav {
 
 .form-grupo input:focus, 
 .form-grupo textarea:focus {
-    border-color: #30c9f8;
+    border-color: hsl(184, 89%, 55%);
     outline: none;
     box-shadow: 0 0 10px rgba(48, 201, 248, 0.2);
 }
 
 .botao-enviar {
-    background-color: #30c9f8;
+    background-color: hsl(184, 89%, 55%);
     color: #fff;
     border: none;
     padding: 12px 24px;
@@ -748,7 +748,7 @@ nav {
 }
 
 .botao-enviar:hover {
-    background-color: #28b5e0;
+    background-color: hsl(184, 89%, 55%);
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(48, 201, 248, 0.3);
 }
@@ -773,7 +773,7 @@ footer {
 }
 
 .logo-footer span {
-    color: #30c9f8;
+    color: hsl(184, 89%, 55%);
 }
 
 .menu-footer {
@@ -787,7 +787,7 @@ footer {
 }
 
 .menu-footer a:hover {
-    color: #30c9f8;
+    color: hsl(184, 89%, 55%);
 }
 
 .copyright {
