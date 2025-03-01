@@ -12,11 +12,15 @@ html {
 
 body {
     background: linear-gradient(to right, #0270AC, #6FF9B9);
+    background-size: cover; /* Garante que o fundo cubra toda a tela */
+    background-repeat: no-repeat; /* Impede repetição do fundo */
+    background-attachment: fixed; /* Mantém o fundo fixo ao rolar */
     color: #30c9f8;
     line-height: 1.6;
-    height: 100vh; 
-    margin: 0;
+    height: 100vh; /* Garante que ocupa toda a altura da tela */
+    overflow-x: hidden; /* Evita rolagem horizontal */
 }
+
 a {
     text-decoration: none;
     color: inherit;
@@ -26,14 +30,15 @@ ul {
     list-style: none;
 }
 
-
+/* Estilos do header */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
     position: fixed;
-    width: 100%;
+    width: 100vw; /* Garante que ocupa 100% da largura da tela */
+    left: 0;
     top: 0;
     z-index: 1000;
     background-color: rgba(10, 10, 10, 0.9);
@@ -102,6 +107,7 @@ nav {
     cursor: pointer;
     color: #30c9f8;
 }
+
 
 
 .principal {
@@ -576,9 +582,10 @@ nav {
 }
 
 .foto-sobre {
-    width: 350px;
-    height: 350px;
-    object-fit: cover;
+    width: 100%; /* Faz a imagem ocupar toda a largura disponível */
+    max-width: 30px; /* Mantém um limite máximo para não ficar muito grande */
+    height: auto; /* Mantém a proporção da imagem */
+    object-fit: cover; /* Garante que a imagem não distorça */
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     border: 4px solid #30c9f8;
@@ -833,6 +840,7 @@ footer {
 
 @media (max-width: 768px) {
     header {
+        
         padding: 15px 20px;
     }
     
@@ -910,6 +918,12 @@ footer {
     .formulario-contato {
         padding: 20px 15px;
     }
+
+    .foto-sobre {
+        grid-template-columns: 1fr;
+    }
+
+    
 }
 
 
@@ -929,16 +943,16 @@ footer {
 
 
 .texto-sobre p {
-    color: #0c0c0c; 
+    color: #1707f8; 
 }
 
 
 .item-contato p {
-    color: #0c0c0c; 
+    color: hsl(184, 89%, 55%); 
 }
 
 
 p {
-    color: #0c0c0c;
+    color: #fff;
     line-height: 1.6;
 }
