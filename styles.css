@@ -35,7 +35,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 50px;
+    padding: 50px 50px;
     position: fixed;
     width: 100vw; /* Garante que ocupa 100% da largura da tela */
     left: 0;
@@ -702,6 +702,7 @@ nav {
     padding: 30px;
     border-radius: 10px;
     border: 1px solid #222;
+    align-items: center;
 }
 
 .form-grupo {
@@ -838,7 +839,7 @@ footer {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 700px) {
     header {
         
         padding: 15px 20px;
@@ -886,7 +887,7 @@ footer {
 }
 
 
-@media (max-width: 480px) {
+@media (max-width: 350px) {
     .texto-principal h1 {
         font-size: 32px;
     }
