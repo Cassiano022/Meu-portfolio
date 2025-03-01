@@ -6,19 +6,20 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-html {
-    scroll-behavior: smooth;
+html, body {
+    overflow-x: hidden; /* Evita rolagem horizontal */
+    width: 100%;
+    max-width: 100%;
 }
 
 body {
     background: linear-gradient(to right, #0270AC, #6FF9B9);
-    background-size: cover; /* Garante que o fundo cubra toda a tela */
-    background-repeat: no-repeat; /* Impede repetição do fundo */
-    background-attachment: fixed; /* Mantém o fundo fixo ao rolar */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     color: hsl(184, 89%, 55%);
     line-height: 1.6;
-    height: 100vh; /* Garante que ocupa toda a altura da tela */
-    overflow-x: hidden; /* Evita rolagem horizontal */
+    min-height: 100vh; /* Garante altura mínima de 100% da viewport */
 }
 
 a {
@@ -35,9 +36,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 50px;
+    padding: 25px 50px;
     position: fixed;
-    width: 100vw; /* Garante que ocupa 100% da largura da tela */
+    width: 100%; /* Alterado de 100vw para 100% */
     left: 0;
     top: 0;
     z-index: 1000;
@@ -108,13 +109,12 @@ nav {
     color: hsl(184, 89%, 55%);
 }
 
-
-
 .principal {
     display: flex;
     align-items: center;
     min-height: 100vh;
     padding: 120px 50px 80px;
+    width: 100%; /* Garante largura total */
 }
 
 .conteudo-principal {
@@ -123,6 +123,8 @@ nav {
     align-items: center;
     width: 100%;
     gap: 50px;
+    max-width: 1400px; /* Adiciona largura máxima para telas muito grandes */
+    margin: 0 auto; /* Centraliza na tela */
 }
 
 .texto-principal {
@@ -236,9 +238,9 @@ nav {
     }
 }
 
-
 .secao {
     padding: 100px 50px;
+    width: 100%; /* Garante largura total */
 }
 
 .titulo-secao {
@@ -258,11 +260,18 @@ nav {
     background-color: hsl(184, 89%, 55%);
 }
 
+/* Container para centralizar o conteúdo com largura máxima */
+.container {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+}
 
 .tecnologias {
     background-color: #0d0d0d;
     position: relative;
     overflow: hidden;
+    width: 100%; /* Garante largura total */
 }
 
 .tecnologias::before {
@@ -280,6 +289,8 @@ nav {
     justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
+    max-width: 1400px; /* Adiciona largura máxima para telas muito grandes */
+    margin: 0 auto; /* Centraliza na tela */
 }
 
 .card-tecnologia {
@@ -443,15 +454,17 @@ nav {
     background-color: #38B2AC; /* Cor do Tailwind */
 }
 
-
 .projetos {
     background-color: #080808;
+    width: 100%; /* Garante largura total */
 }
 
 .grade-projeto {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     gap: 30px;
+    max-width: 1400px; /* Adiciona largura máxima para telas muito grandes */
+    margin: 0 auto; /* Centraliza na tela */
 }
 
 .card-projeto {
@@ -564,15 +577,17 @@ nav {
     gap: 10px;
 }
 
-
 .sobre {
     background-color: #0d0d0d;
+    width: 100%; /* Garante largura total */
 }
 
 .conteudo-sobre {
     display: flex;
     gap: 50px;
     align-items: center;
+    max-width: 1400px; /* Adiciona largura máxima para telas muito grandes */
+    margin: 0 auto; /* Centraliza na tela */
 }
 
 .imagem-sobre {
@@ -583,7 +598,7 @@ nav {
 
 .foto-sobre {
     width: 100%; /* Faz a imagem ocupar toda a largura disponível */
-    max-width: 30px; /* Mantém um limite máximo para não ficar muito grande */
+    max-width: 400px; /* Ajustado de 30px para um valor mais razoável */
     height: auto; /* Mantém a proporção da imagem */
     object-fit: cover; /* Garante que a imagem não distorça */
     border-radius: 10px;
@@ -616,7 +631,7 @@ nav {
 }
 
 .texto-sobre p {
-    color: #0c0c0c;
+    color: #fff; /* Ajustado de #0c0c0c para #fff para melhor legibilidade */
     margin-bottom: 15px;
     font-size: 16px;
     line-height: 1.6;
@@ -628,14 +643,16 @@ nav {
     gap: 15px;
 }
 
-
 .contato {
     background-color: #080808;
+    width: 100%; /* Garante largura total */
 }
 
 .container-contato {
     display: flex;
     gap: 50px;
+    max-width: 1400px; /* Adiciona largura máxima para telas muito grandes */
+    margin: 0 auto; /* Centraliza na tela */
 }
 
 .info-contato {
@@ -669,7 +686,7 @@ nav {
 }
 
 .item-contato p {
-    color: #0f0f0f;
+    color: #fff; /* Ajustado de #0f0f0f para #fff para melhor legibilidade */
 }
 
 .redes-sociais {
@@ -753,18 +770,20 @@ nav {
     box-shadow: 0 5px 15px rgba(48, 201, 248, 0.3);
 }
 
-
 footer {
     background-color: #0a0a0a;
     padding: 50px;
     border-top: 1px solid #222;
+    width: 100%; /* Garante largura total */
 }
 
 .container-footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0px;
+    gap: 20px; /* Ajustado de 0px para melhor espaçamento */
+    max-width: 1400px; /* Adiciona largura máxima para telas muito grandes */
+    margin: 0 auto; /* Centraliza na tela */
 }
 
 .logo-footer h3 {
@@ -796,7 +815,6 @@ footer {
     text-align: center;
 }
 
-
 @media (max-width: 992px) {
     .conteudo-principal {
         flex-direction: column-reverse;
@@ -821,12 +839,7 @@ footer {
         gap: 40px;
     }
     
-    .foto-sobre {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-    
+  
     .titulo-secao {
         text-align: center;
         display: block;
@@ -837,11 +850,14 @@ footer {
         left: 50%;
         transform: translateX(-50%);
     }
+    
+    .container-contato {
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 700px) {
     header {
-        
         padding: 15px 20px;
     }
     
@@ -884,8 +900,21 @@ footer {
         flex-direction: column;
         align-items: center;
     }
+
+   
+    
+    .grade-projeto {
+        grid-template-columns: 1fr; /* Uma coluna em telas menores */
+    }
 }
 
+@media (max-width: 480px) {
+    .grade-projeto {
+        grid-template-columns: 1fr; /* Garante uma coluna em telas muito pequenas */
+    }
+
+    
+}
 
 @media (max-width: 350px) {
     .texto-principal h1 {
@@ -896,7 +925,7 @@ footer {
         font-size: 18px;
     }
     
-    .botoes-acao {
+    .botoes {
         flex-direction: column;
         width: 100%;
         gap: 15px;
@@ -920,13 +949,8 @@ footer {
         padding: 20px 15px;
     }
 
-    .foto-sobre {
-        grid-template-columns: 1fr;
-    }
-
-    
+   
 }
-
 
 .menu.active {
     display: flex;
@@ -942,16 +966,14 @@ footer {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
-
+/* Ajuste de cores para contraste */
 .texto-sobre p {
-    color: hsl(184, 89%, 55%); 
+    color: #fff; /* Alterado para branco para melhor contraste */
 }
-
 
 .item-contato p {
-    color: hsl(184, 89%, 55%); 
+    color: #fff; /* Alterado para branco para melhor contraste */
 }
-
 
 p {
     color: #fff;
