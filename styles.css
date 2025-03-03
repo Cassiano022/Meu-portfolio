@@ -693,6 +693,7 @@ nav {
     display: flex;
     gap: 16px;
     margin-top: 20px;
+    font-size: 20px;
 }
 
 .rede-social {
