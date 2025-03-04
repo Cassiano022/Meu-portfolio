@@ -70,6 +70,16 @@ nav {
     align-items: center;
 }
 
+.texto-3d {
+    font-size: 50px;
+    font-weight: bold;
+    color: hsl(184, 89%, 55%);
+    text-transform: uppercase;
+    text-shadow: 3px 3px 0px #0496f8,  
+                 6px 6px 0px #046cb1,  
+                 9px 9px 0px #0531f7;
+}
+
 .menu {
     display: flex;
     gap: 40px;
@@ -284,6 +294,7 @@ nav {
     background: linear-gradient(to bottom, transparent, #0d0d0d);
 }
 
+
 .container-tecnologias {
     display: flex;
     justify-content: center;
@@ -456,7 +467,21 @@ nav {
 
 .projetos {
     background-color: #080808;
-    width: 100%; /* Garante largura total */
+    position: relative;
+    width: 100%;
+}
+
+.projetos::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    height: 300px;
+    background: rgba(173, 216, 230, 0.5); /* Azul bebê com opacidade */
+    filter: blur(100px);
+    z-index: -1;
+    transform: translate(-50%, -50%);
 }
 
 .grade-projeto {
